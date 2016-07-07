@@ -37,6 +37,5 @@ int main(void)
 	read(sockfd, &ch, 1);
 	printf("char from server = %c\n", ch);
 
-
 	return 0;
 }
