@@ -10,7 +10,7 @@
 int main()
 {
 	int server_sockfd, client_sockfd;
-	int client_len;
+	unsigned int client_len;
 	struct sockaddr_un server_address, client_address;
 
 	//remove the old socket

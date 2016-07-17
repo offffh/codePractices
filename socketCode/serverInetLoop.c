@@ -14,7 +14,7 @@ int main(void)
 {
 	int server_sockfd, client_sockfd;
 	struct sockaddr_in server_address, client_address;
-	int client_len;
+	unsigned int client_len;
 
 	//create an unnamed socket
 	server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
