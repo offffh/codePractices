@@ -77,8 +77,14 @@ Plugin 'vim-scripts/google.vim'
 Plugin 'vim-scripts/surround.vim'
 Plugin 'vim-scripts/c.vim'
 Plugin 'vim-scripts/Auto-Pairs'
+"Plugin 'phongvcao/vim-stardict'
+Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Valloric/YouCompleteMe'
+" for markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+" end markdwon
 
 call vundle#end()
 
@@ -191,14 +197,14 @@ function UpdateTitle()
 endfunction
 
 function AddTitleForC()
-    call append(0,"/----------------------------------------------------------")
+    call append(0,"/* ----------------------------------------------------------")
     call append(1," * Author        : WuYang")
     call append(2," * Email         : yangwuxd@163.com")
     call append(3," * Create time   : ".strftime("%Y-%m-%d %H:%M"))
     call append(4," * Last modified : ".strftime("%Y-%m-%d %H:%M"))
     call append(5," * Filename      : ".expand("%:t"))
     call append(6," * Description   : ")
-    call append(7," * -------------------------------------------------------/")
+    call append(7," * ------------------------------------------------------- */")
     echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endfunction
 
@@ -269,7 +275,6 @@ inoremap <leader><leader> <C-x><C-o>
 "let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:clang_user_options='|| exit 0'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处
-" #####YouCompleteMe Configure 
-
 let g:ycm_key_invoke_completion='<C-a>'
+" #####YouCompleteMe Configure 
 
