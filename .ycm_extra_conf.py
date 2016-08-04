@@ -48,6 +48,21 @@ flags = [
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1',
 '-isystem',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+
+'-isystem'
+'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8'
+'-isystem'
+'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/backward'
+'-isystem'
+'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/x86_64-linux-gnu/c++/4.8'
+'-isystem'
+'/usr/local/include'
+'-isystem'
+'/usr/include/clang/3.3/include'
+'-isystem'
+'/usr/include/x86_64-linux-gnu'
+'-isystem'
+'/usr/include'
 ]
 
 
@@ -144,17 +159,3 @@ def FlagsForFile( filename, **kwargs ):
     'do_cache': True
   }
 
-'-isystem'
-'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8'
-'-isystem'
-'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/backward'
-'-isystem'
-'/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/x86_64-linux-gnu/c++/4.8'
-'-isystem'
-'/usr/local/include'
-'-isystem'
-'/usr/include/clang/3.3/include'
-'-isystem'
-'/usr/include/x86_64-linux-gnu'
-'-isystem'
-'/usr/include'
