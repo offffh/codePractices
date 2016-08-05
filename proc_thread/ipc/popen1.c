@@ -33,7 +33,7 @@ int main(void)
 		/* read data from the pipe file */
 		chars_read = fread(buffer, sizeof(char), BUFSIZ, read_fp);
 		if(chars_read > 0)
-			printf("Output was:-\n%s\n", buffer);
+			printf("Output was %d chars:-\n%s\n", chars_read, buffer);
 		exit(EXIT_SUCCESS);
 	}
 	perror("popen command 'uname -a'");
