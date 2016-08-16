@@ -49,6 +49,7 @@ flags = [
 '-isystem',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
 
+# echo | clang -v -E -x c++ -
 '-isystem'
 '/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8'
 '-isystem'
